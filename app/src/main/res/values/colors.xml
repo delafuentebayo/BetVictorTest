@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background_bar">#fba219</color>
+    <color name="gradient_start">#f3f8f9</color>
+    <color name="gradient_end">#4099ff</color>
+</resources>

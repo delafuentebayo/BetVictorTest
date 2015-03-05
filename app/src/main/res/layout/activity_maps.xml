@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    >
+    <TextView
+        android:id="@+id/internet_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/no_internet"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:background="@android:color/holo_red_dark"/>
+    <LinearLayout
+        android:id="@+id/linearlayout_time_refreshing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fb9808"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="@string/time_remaining"
+            android:gravity="center"
+            />
+        <TextView
+            android:id="@+id/time_remaining"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="#fb9808"/>
+    </LinearLayout>
+    <fragment
+        android:layout_width="match_parent"
+    android:layout_height="match_parent" android:id="@+id/map" tools:context=".MapsActivity"
+    android:name="com.google.android.gms.maps.SupportMapFragment" />
+</LinearLayout>
